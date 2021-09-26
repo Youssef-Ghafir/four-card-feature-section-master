@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    font-size: 15px;
+}
+body {
+    background-color: #FAFAFA;
+    padding: 50px 13px ;
+    min-height: 100vh;
+}
+.container {
+    max-width: 75%;
+    margin: 0 auto;
+}
+.container h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+.container h1:first-of-type {
+    font-weight: normal;
+    color: hsl(234, 12%, 34%);
+}
+.container h1:nth-child(2) {
+    margin-bottom: 1rem;
+    color: hsl(234, 12%, 34%);
+}
+.container > p {
+    text-align: center;
+    font-size: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+    color: hsl(229, 6%, 66%);
+    font-weight: normal;
+    margin-bottom: 3rem;
+}
+.container .box {
+    gap: 30px;
+    display: grid;
+    align-items: center;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+}
+.container .box .content-box{
+   background-color: #Fff;
+   padding: 2rem;
+   cursor: pointer;
+   border-radius: 10px;
+   transition: .2s all;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.container .box .content-box:hover {
+    transform: translateY(-5px);
+}
+.container .box .content-box img {
+    width: 64px;
+    height: 64px;
+    align-self: flex-end;
+}
+.container .box .content-box .info h3 {
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+    color: hsl(234, 12%, 34%);
+}
+.container .box .content-box .info p {
+    font-size: 1rem;
+    color: hsl(229, 6%, 66%);
+    margin-bottom: 3rem;
+}
+
+.container .box .content-box:first-of-type {
+    grid-row: span 3;
+    border-top: 3px solid hsl(180, 62%, 55%);
+}
+.container .box .content-box:nth-child(2) {
+    border-top: 3px solid hsl(0, 78%, 62%);
+}
+.container .box .content-box:nth-child(3){
+    grid-row:span 3;
+    border-top: 3px solid hsl(34, 97%, 64%);
+}
+
+.container .box .content-box:last-of-type {
+    border-top: 3px solid hsl(212, 86%, 64%);
+} 
+@media (max-width:580px) {
+    .container {
+        max-width: 100%;
+    }
+    .container h1{
+        font-size: 1.5rem;
+    }
+}
